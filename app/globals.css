@@ -1,27 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.standard-blue {
+  color: #235cbd;
+}
+.active-blue {
+  color: #316dd5;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.button {
+  @apply hover:text-[#316dd5] text-3xl font-medium cursor-pointer
+  py-2 px-1 rounded-xl
+  border-[3px] border-[rgba(0,0,0,0.4)] hover:border-[#316dd5] shadow-bordershadow
+  bg-[rgba(0,0,0,0.6)] outline outline-[2px] outline-[#235cbd] outline-offset-[-4px];
+}
+
+.anchor {
+  @apply px-6 rounded-xl
+}
+
+.parent {
+  @apply px-16 pb-6 pt-5 
 }

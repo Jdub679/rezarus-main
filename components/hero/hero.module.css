@@ -1,0 +1,7 @@
+.mainsection {
+  @apply flex
+}
+
+.downloadsection {
+  @apply flex justify-center items-end
+}

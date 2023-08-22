@@ -1,0 +1,4 @@
+.navTitle {
+  @apply text-6xl font-bold uppercase;
+  text-shadow: 3px 3px 6px #235cbd;
+}
