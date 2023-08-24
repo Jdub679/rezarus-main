@@ -1,15 +1,15 @@
 'use client';
 import { useState } from 'react';
 import { navLinks } from '@/constants';
-import ButtonNav from '../Button/ButtonNav';
+import Button from '../Button/Button';
 import styles from './navbar.module.css';
 import Image from 'next/image';
 
 
-function Navbar() {
+const Navbar = () => {
   const [ active, setActive ] = useState('');
   const images = [
-    '/title-img.webp'
+    '/title-img-2.webp'
   ] 
 
   return (
@@ -26,13 +26,13 @@ function Navbar() {
             <li
             key={link.id}
             >
-              <ButtonNav
+              <Button
                 className={`${active === link.title ? "active-blue" : "standard-blue"}`}
                 onClick={() => setActive(link.title)}
                 href={`#${link.id}`}
                 >
                 {link.title}
-              </ButtonNav>
+              </Button>
             </li>
           ))}
         </ul>

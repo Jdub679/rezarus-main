@@ -1,4 +1,5 @@
 'use client';
+import { Button } from "..";
 
 interface DownloadButtonProps {
   filePath?: string;
@@ -24,9 +25,9 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ filePath, className }) 
     }
   }
   return (
-    <button onClick={handleDownload} className={className}>
+    <Button onClick={handleDownload} className={className}>
       Download Now
-    </button>
+    </Button>
   )
 }
 
