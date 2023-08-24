@@ -23,15 +23,39 @@
 
 .button {
   @apply hover:text-[#316dd5] text-3xl font-medium cursor-pointer
-  py-2 px-1 rounded-xl
+  py-2 px-1 rounded-xl relative
   border-[3px] border-[rgba(0,0,0,0.4)] hover:border-[#316dd5] shadow-bordershadow
   bg-[rgba(0,0,0,0.6)] outline outline-[2px] outline-[#235cbd] outline-offset-[-4px];
 }
+
+.button::before,
+.button::after {
+  position: absolute;
+  background-color: #235cbd;
+}
+.button::before {
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 4px;
+}
+
+.button::after {
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 4px;
+}
+
 
 .anchor {
   @apply px-6 rounded-xl
 }
 
 .parent {
-  @apply px-16 pb-6 pt-5 
+  @apply px-16 pb-4 pt-5 
 }

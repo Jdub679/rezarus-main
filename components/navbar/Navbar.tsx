@@ -9,7 +9,7 @@ import Image from 'next/image';
 function Navbar() {
   const [ active, setActive ] = useState('');
   const images = [
-    '/title-img-1.webp'
+    '/title-img.webp'
   ] 
 
   return (
@@ -18,7 +18,7 @@ function Navbar() {
         <Image 
           src={images[0]}
           alt="Rezarus logo"
-          width={350}
+          width={400}
           height={175}
           />
         <ul className="flex flex-row gap-4 justify-end items-end">
