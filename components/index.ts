@@ -1,4 +1,6 @@
 export { default as Hero } from './hero/Hero'
-export { default as Button } from './Button/ButtonNav'
+export { default as Button } from './Button/Button'
 export { default as NavBar } from './navbar/Navbar'
 export { default as DownloadGame } from './Download/DownloadGame'
+export { default as ImageSlide } from './ImageSlide/ImageSlide'
+export { default as Login } from './LoginForm/LoginForm'

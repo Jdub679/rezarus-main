@@ -1,0 +1,40 @@
+
+.loginContainer {
+  @apply flex flex-col justify-center items-center p-3 border-4 border-black rounded-2xl
+}
+
+.header {
+  @apply text-2xl font-bold text-center py-4
+}
+
+.loginForm {
+  @apply flex flex-col gap-2
+}
+
+.inputContainer {
+  @apply flex flex-col gap-1
+}
+
+.inputText{
+  @apply font-semibold text-lg tracking-wide
+}
+
+.input {
+  @apply rounded-md h-9 px-3 focus:outline-none
+}
+
+.buttonContainer {
+  @apply flex justify-center pt-2 pb-3
+}
+
+.signUpContainer {
+  @apply flex flex-col gap-1 text-center pb-2
+}
+
+.textHeader {
+  @apply text-xl
+}
+
+.text {
+  @apply text-lg font-bold hover:text-[#235cbd]
+}
