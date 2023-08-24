@@ -1,7 +1,12 @@
-.mainsection {
-  @apply flex
+.mainSection {
+  @apply flex;
 }
 
-.downloadsection {
-  @apply flex justify-center items-end
+.downloadSection {
+  @apply flex justify-center items-end h-1/2;
+}
+
+.imageSlider {
+  @apply border-[5px] w-1/2 rounded-[2rem] h-full border-black relative shadow-cardshadow;
+  
 }
