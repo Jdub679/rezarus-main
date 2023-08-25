@@ -1,16 +1,20 @@
 .mainContainer {
-  @apply grid  grid-flow-col grid-cols-[55fr,45fr] gap-16 w-full h-full justify-around p-6 border-[1px] border-slate-600 rounded-2xl bg-[rgba(71,70,70,0.5)];
+  @apply grid  grid-flow-col grid-cols-[55fr,45fr] gap-6 w-full p-6 border-[1px] border-slate-600 rounded-2xl bg-[rgba(71,70,70,0.5)];
+}
+
+.mainContainer > * {
+  @apply overflow-hidden
 }
 
 .rightContainer {
-  @apply flex flex-col items-center gap-16;
+  @apply flex flex-col items-center gap-16 col-start-2 ;
 }
 
 .heroText {
   @apply text-2xl xl:text-lg text-slate-400 font-semibold min-h-min rounded-2xl text-center p-6 
-  bg-[#0000007e] w-[30rem] h-1/2 shadow-bottomshadow border-2 border-[#235cbd]
+  bg-[#0000007e] w-[35rem] h-1/2 shadow-bottomshadow border-[1px] border-[#235cbd]
 }
 
 .downloadSection {
-  @apply flex justify-center items-center h-1/2;
+  @apply flex justify-center items-center h-1/2 w-full;
 }

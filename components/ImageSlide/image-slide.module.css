@@ -1,5 +1,5 @@
 .slideContainer {
-  @apply grid grid-rows-[95fr,5fr] h-[80%] w-full
+  @apply grid grid-rows-[95fr,5fr] h-full w-full
 }
 
 .imageSlider {
