@@ -7,8 +7,8 @@ const Hero = () => {
   const filePath = '';
 
   return (
-    <main className={`parent`}>
-      <section className={`${styles.mainContainer}`}>
+    <main className={`parent flex h-[700px]`}>
+      <section className={`${styles.mainContainer} flex-1`}>
         <div className={``}>
           <ImageSlide />
         </div>
