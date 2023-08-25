@@ -3,9 +3,9 @@
 }
 
 .button {
-  @apply text-[#235cbd] hover:text-[#316dd5] text-2xl font-medium cursor-pointer
+  @apply text-[#235cbd] hover:text-[#316dd5] text-lg xl:text-2xl font-medium cursor-pointer
   py-2 px-3 rounded-xl relative
-  border-[3px] border-[rgba(0,0,0,0.4)] hover:border-[#316dd5] shadow-bordershadow
+  border-[3px] border-[rgba(0,0,0,0.4)] hover:border-[#316dd5] shadow-bottomshadow
   bg-[rgba(0,0,0,0.6)] outline outline-[2px] outline-[#235cbd] outline-offset-[-4px];
 }
 
@@ -20,7 +20,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
-  height: 4px;
+  height: 2px;
 }
 
 .button::after {
@@ -29,5 +29,13 @@
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
-  height: 4px;
+  height: 2px;
+}
+
+.spanTop {
+  @apply top-0 left-2/4 h-2 w-[2px] bg-[#235cbd] absolute
+}
+
+.spanBottom {
+  @apply bottom-0 left-2/4 h-2 w-[2px] bg-[#235cbd] absolute
 }
