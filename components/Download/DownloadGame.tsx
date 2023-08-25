@@ -25,7 +25,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ filePath, className }) 
     }
   }
   return (
-    <Button onClick={handleDownload} className={className}>
+    <Button onClick={handleDownload} className={className} href=''>
       Download Now
     </Button>
   )

@@ -1,4 +1,5 @@
 import styles from './button.module.css';
+import Link from 'next/link';
 
 interface ButtonProps 
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,9 +17,11 @@ const Button = ({ onClick, href, children, className, type="button", ...props }:
       type={type}
       {...props}
     >
-      <a className={`${styles.anchor}`} href={href}>
+      <span className={`${styles.spanTop}`}></span>
+      <Link className={`${styles.anchor}`} href={`/${href}`}>
         {children}
-      </a>
+      </Link>
+      <span className={`${styles.spanBottom}`}></span>
     </button>
   )
 }

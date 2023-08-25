@@ -9,13 +9,13 @@ const Hero = () => {
   return (
     <main className={`parent`}>
       <section className={`${styles.mainContainer}`}>
-        <div className={`${styles.imageSection}`}>
+        <div className={``}>
           <ImageSlide />
         </div>
         <div className={`${styles.rightContainer}`}>
-          <div className={`${styles.loginSection}`}>
-            <Login />
-          </div>
+          <section className={styles.heroText}>
+            <p>Rezarus is an online tank game inspired by a classic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis adipisci corporis autem quas pariatur! Non laudantium voluptatem quaerat natus ipsa maxime vero dolore minus dolores libero accusamus, molestias deleniti?</p>
+          </section>
           <div className={`${styles.downloadSection}`}>
             <DownloadButton 
               filePath={filePath}

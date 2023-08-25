@@ -4,6 +4,7 @@ import { navLinks } from '@/constants';
 import Button from '../Button/Button';
 import styles from './navbar.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Navbar = () => {
@@ -13,15 +14,19 @@ const Navbar = () => {
   ] 
 
   return (
-    <header className="parent">
-      <nav className="flex justify-between">
-        <Image 
-          src={images[0]}
-          alt="Rezarus logo"
-          width={400}
-          height={175}
-          />
-        <ul className="flex flex-row gap-4 justify-end items-end">
+    <header className={`${styles.header} parent`}>
+      <nav className={`${styles.nav}`}>
+        <Link
+          href={'/'}
+        >
+          <Image 
+            src={images[0]}
+            alt="Rezarus logo"
+            width={400}
+            height={175}
+            />
+        </Link>
+        <ul className={`${styles.navList}`}>
           {navLinks.map((link) => (
             <li
             key={link.id}
@@ -29,7 +34,7 @@ const Navbar = () => {
               <Button
                 className={`${active === link.title ? "active-blue" : "standard-blue"}`}
                 onClick={() => setActive(link.title)}
-                href={`#${link.id}`}
+                href={`${link.id}`}
                 >
                 {link.title}
               </Button>
@@ -37,6 +42,7 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
+      <span className={styles.headerBorder}></span>
     </header>
   )
 }

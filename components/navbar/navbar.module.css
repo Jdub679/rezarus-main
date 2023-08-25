@@ -1,4 +1,15 @@
-.navTitle {
-  @apply text-6xl font-bold uppercase;
-  text-shadow: 3px 3px 6px #235cbd;
+.header {
+  @apply  bg-[rgba(0,0,0,0.4)] relative
+}
+
+.nav {
+  @apply flex justify-between
+}
+
+.navList {
+  @apply flex flex-row gap-4 justify-end items-end
+}
+
+.headerBorder {
+  @apply absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-[#c2a91c] via-[rgba(0,0,0,0.2)] via-60%
 }
