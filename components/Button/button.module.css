@@ -15,8 +15,8 @@
   height: 2px;
   position: absolute;
   background-color: #447ad8;
+  transition: width 0.3s ease-in;
 }
-
 
 .button::before {
   content: "";
@@ -39,11 +39,15 @@
   @apply bg-red-800
 }
 
-/* ADD CROSSHAIR GROWTH ON HOVER*/
+.button::after:hover,
+.button::before:hover {
+  @apply w-4
+}
+
 
 .spanTop,
 .spanBottom {
-  @apply left-2/4 h-2 w-[2px] bg-[#447ad8] absolute
+  @apply left-2/4 w-[2px] h-2 bg-[#447ad8] absolute transition-height duration-300 ease-in;
 }
 
 .spanTop {
@@ -51,4 +55,9 @@
 }
 .spanBottom {
   @apply bottom-0 
+}
+
+.button:hover .spanTop,
+.button:hover .spanBottom {
+  @apply h-[10px]
 }
