@@ -1,5 +1,5 @@
 .header {
-  @apply  bg-[rgba(0,0,0,0.4)] relative
+  @apply  bg-gradient-to-r from-[rgba(0,0,0,0.5)] from-25% to-gray-800 relative
 }
 
 .nav {
@@ -11,5 +11,5 @@
 }
 
 .headerBorder {
-  @apply absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-[#c1ae42] via-[rgba(0,0,0,0.2)] via-60%
+  @apply absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-[#c1ae42] to-[rgba(0,0,0,0.2)] to-60% 
 }

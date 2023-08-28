@@ -3,24 +3,26 @@
 }
 
 .button {
-  @apply text-[#235cbd] hover:text-[#316dd5] text-lg xl:text-2xl font-medium cursor-pointer
+  @apply text-[#235cbd] hover:text-[#316dd5] text-lg xl:text-xl font-semibold cursor-pointer
   py-2 px-3 rounded-xl relative
-  border-[3px] border-[rgba(0,0,0,0.4)] hover:border-[#316dd5] shadow-bottomshadow
-  bg-[rgba(0,0,0,0.6)] outline outline-[2px] outline-[#235cbd] outline-offset-[-4px];
+  border-[3px] border-[rgba(0,0,0,0.4)] shadow-bottomshadow
+  bg-[rgba(0,0,0,0.6)] outline outline-[3px] outline-[#235cbd] hover:outline-red-800 outline-offset-[-4px];
 }
 
 .button::before,
 .button::after {
+  width: 10px;
+  height: 2px;
   position: absolute;
-  background-color: #235cbd;
+  background-color: #447ad8;
 }
+
+
 .button::before {
   content: "";
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 10px;
-  height: 2px;
 }
 
 .button::after {
@@ -28,14 +30,25 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 10px;
-  height: 2px;
+}
+
+.button::after:hover,
+.button::before:hover,
+.button:hover .spanTop,
+.button:hover .spanBottom {
+  @apply bg-red-800
+}
+
+/* ADD CROSSHAIR GROWTH ON HOVER*/
+
+.spanTop,
+.spanBottom {
+  @apply left-2/4 h-2 w-[2px] bg-[#447ad8] absolute
 }
 
 .spanTop {
-  @apply top-0 left-2/4 h-2 w-[2px] bg-[#235cbd] absolute
+  @apply top-0 
 }
-
 .spanBottom {
-  @apply bottom-0 left-2/4 h-2 w-[2px] bg-[#235cbd] absolute
+  @apply bottom-0 
 }
