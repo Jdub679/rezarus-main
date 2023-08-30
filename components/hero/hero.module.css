@@ -1,5 +1,10 @@
+.downloadSection,
+.heroText {
+  @apply flex shadow-bottomshadow border-[1px] border-slate-400 w-[35rem] h-1/2 bg-[#0000007e] rounded-2xl
+}
+
 .mainContainer {
-  @apply grid  grid-flow-col grid-cols-[55fr,45fr] gap-6 w-full p-6 border-[1px] border-gray-600 rounded-2xl bg-gray-800;
+  @apply grid  grid-flow-col grid-cols-[55fr,45fr] w-full p-6 border-[1px] border-gray-600 rounded-2xl bg-gray-800;
 }
 
 .mainContainer > * {
@@ -7,14 +12,14 @@
 }
 
 .rightContainer {
-  @apply flex flex-col items-center gap-16 col-start-2 ;
+  @apply flex flex-col items-center gap-5 col-start-2 px-2 pb-[10px] justify-self-end;
 }
 
 .heroText {
-  @apply text-2xl xl:text-lg text-slate-400 font-semibold min-h-min rounded-2xl text-center p-6 
-  bg-[#0000007e] w-[35rem] h-1/2 shadow-bottomshadow border-[1px] border-slate-400
+  @apply text-2xl xl:text-lg text-slate-400 font-semibold min-h-min text-center p-6 
+  
 }
 
 .downloadSection {
-  @apply flex justify-center items-center h-1/2 w-full;
+  @apply justify-center items-center;
 }
