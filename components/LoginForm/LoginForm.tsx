@@ -1,10 +1,13 @@
 'use client';
+import { useState } from 'react';
 import styles from './login.module.css'
-import SignInOutButton from './SignInOutButton';
 import Link from 'next/link';
 
 const LoginForm = () => {
 
+  const [ loginUserName, setLoginUserName ] = useState('');
+  const [ loginPassword, setLoginPassword ] = useState('');
+  
   return (
     <>
       <div className={`${styles.loginContainer}`}>
@@ -35,18 +38,15 @@ const LoginForm = () => {
                 type="text" name="password" required 
               />
             </div>
-            <div className={`${styles.buttonContainer}`}>
-              <SignInOutButton />
-            </div>
           </fieldset>
         </form>
-        <div className={`${styles.signUpContainer}`}>
+        <div className={`${styles.registerContainer}`}>
           <h4 className={`${styles.textHeader}`}>Don't have an account yet?</h4>
           <Link
             className={`${styles.text}`}
-            href={'/sign-up'}
+            href={'/register'}
             >
-            Sign up here!
+            Register here!
           </Link>
         </div>
       </div>

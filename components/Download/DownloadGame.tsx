@@ -14,7 +14,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ filePath, className }) 
       const fileName = filePath.split('/').pop();
       link.href = filePath;
       
-      link.setAttribute('download', fileName);
+      link.setAttribute('download', fileName as string);
 
       document.appendChild(link);
       link.click()

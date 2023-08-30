@@ -3,7 +3,7 @@
 }
 
 .imageSlider {
-  @apply border-[6px] rounded-[2rem] border-black relative shadow-bottomshadow;
+  @apply border-[6px] rounded-[2rem] border-black relative shadow-bottomshadow w-[99%];
 }
 
 .slideDots {
